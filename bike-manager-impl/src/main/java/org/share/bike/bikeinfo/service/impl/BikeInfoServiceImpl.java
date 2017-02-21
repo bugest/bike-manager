@@ -10,7 +10,4 @@ import org.springframework.stereotype.Service;
 public class BikeInfoServiceImpl implements IBikeInfoService {
 	@Autowired
 	private BikeInfoDao bikeInfoDao;
-	public BikeInfoServiceImpl(){	
-		System.out.println("---------------------------------------------------");
-	}
 }
