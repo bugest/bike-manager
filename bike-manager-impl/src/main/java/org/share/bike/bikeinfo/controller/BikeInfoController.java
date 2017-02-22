@@ -1,5 +1,8 @@
 package org.share.bike.bikeinfo.controller;
 
+import java.util.List;
+
+import org.share.bike.bikeinfo.entity.BikeInfo;
 import org.share.bike.bikeinfo.service.IBikeInfoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,5 +29,11 @@ public class BikeInfoController {
 	public String test(){
 		return "hello";
 		
+	}
+	
+	@RequestMapping("test1")
+	@ResponseBody
+	public List<BikeInfo> findAll(){
+		return bikeInfoService.findAll();
 	}
 }
