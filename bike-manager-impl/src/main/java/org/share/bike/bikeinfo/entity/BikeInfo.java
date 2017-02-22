@@ -10,6 +10,13 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
+/** 
+* @ClassName: BikeInfo 
+* @Description: 车辆信息
+* @author linan linanb@yonyou.com 
+* @date 2017年2月22日 上午8:51:27 
+*  
+*/
 @Entity
 @Table(name = "bike_info")
 public class BikeInfo implements Serializable {
